@@ -1,0 +1,21 @@
+= Rolemaster Unified NPC API
+
+Mock version for frontend developing: https://github.com/labcabrera/rmu-fe/
+
+----
+curl -H 'Content-Type: application/json' \
+    -d '{ "name":"Orc - Sword - Lvl 1","realm":"lotr","level": 1, "hp": 25}' \
+    -X POST \
+    http://localhost:3002/v1/npcs
+
+curl -H 'Content-Type: application/json' \
+    -d '{ "name":"Orc - Sword - Lvl 5","realm":"lotr","level": 5, "hp": 65}' \
+    -X POST \
+    http://localhost:3002/v1/npcs
+----
+
+----
+curl http://localhost:3002/v1/npcs
+
+curl http://localhost:3002/v1/npcs/66e4121cf94c74ebca93ddc8
+----
