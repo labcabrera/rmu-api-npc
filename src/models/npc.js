@@ -12,7 +12,7 @@ const npcSkillSchema = new mongoose.Schema({
 });
 
 const npcItemSchema = new mongoose.Schema({
-    id: String,
+    name: String,
     type: String,
     attackTable: String,
     skill: String
