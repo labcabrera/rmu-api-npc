@@ -1,0 +1,36 @@
+{
+    "name": "Orc - Scimitar - Lvl 1",
+    "realm": "lotr",
+    "level": 1,
+    "race": "ork",
+    "size": "medium",
+    "armorType": 4,
+    "hp": 25,
+    "skills": [
+        {
+            "skill": "melee-weapon:blade",
+            "bonus": 60
+        }
+    ],
+    "items": [
+        {
+            "name": "scimitar",
+            "type": "weapon",
+            "attackTable": "scimitar",
+            "skill": "melee-weapon:blade"
+        },
+        {
+            "name": "shield",
+            "type": "shield",
+            "attackTable": "shield",
+            "skill": "melee-weapon:shield"
+        }
+    ],
+    "equipment": {
+        "mainHand": "scimitar",
+        "offHand": "shield",
+        "body": "",
+        "head": ""
+    },
+    "description": "Lorem ipsum"
+}

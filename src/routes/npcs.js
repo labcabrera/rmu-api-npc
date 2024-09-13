@@ -25,10 +25,10 @@ router.get('/:id', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-    console.log("NPC creation << " + req.params.name);
-    const { name, realm, level, hp, description } = req.body;
+    console.log("NPC creation << " + JSON.stringify(req.body, null, 2));
+    const { name, realm, level, race, size, armorType, hp, skills, items, equipment, description } = req.body;
     try {
-        const newItem = new Npc({ name, realm, level, hp });
+        const newItem = new Npc({ name, realm, level, race, size, armorType, hp, skills, items, equipment, description });
         const savedItem = await newItem.save();
         res.status(201).json(savedItem);
     } catch (error) {

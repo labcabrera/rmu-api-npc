@@ -8,10 +8,7 @@ curl -H 'Content-Type: application/json' \
     -X POST \
     http://localhost:3002/v1/npcs
 
-curl -H 'Content-Type: application/json' \
-    -d '{ "name":"Orc - Sword - Lvl 5","realm":"lotr","level": 5, "hp": 65}' \
-    -X POST \
-    http://localhost:3002/v1/npcs
+curl -H 'Content-Type: application/json' -d @./sample-data/npc-orc-sword-1.json -X POST http://localhost:3002/v1/npcs
 ----
 
 ----
