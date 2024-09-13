@@ -14,8 +14,8 @@ mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to ' + MONGO_URI))
   .catch((err) => console.log('Error connecting to ' + MONGO_URI, err));
 
-const npcsRouter = require('./routes/npcs');
-app.use('/v1/npcs', npcsRouter);
+const npcsRouter = require('./routes/npc');
+app.use('/v1/npc', npcsRouter);
 
 app.get('/', (req, res) => {
   res.send('TODO');
